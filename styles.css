@@ -1,0 +1,99 @@
+body {
+    font-family: 'Roboto Slab', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.red-theme {
+    background-color: #f7e1e1; /* Muted red */
+}
+
+.wrapper {
+    flex: 1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #b71c1c; /* Darker red */
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between; /* Align header content with menu */
+    align-items: center; /* Center align items vertically */
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    text-align: right; /* Align the menu to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Add margin on the left to separate menu items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px; /* Increase padding to make menu items more prominent */
+    border-radius: 5px; /* Add some rounded corners for a nicer look */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
+}
+
+.hero {
+    background-color: #b71c1c; /* Darker red */
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.about,
+.contact {
+    padding: 40px 0;
+}
+
+.gallery {
+    padding: 40px 0;
+}
+
+.artwork {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+}
+
+.artwork img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #b71c1c; /* Darker red */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
