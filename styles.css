@@ -97,3 +97,16 @@ footer {
     padding: 10px 0;
     width: 100%;
 }
+
+.artwork-item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; /* Adjust spacing between items as needed */
+}
+
+.subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: center;
+}
