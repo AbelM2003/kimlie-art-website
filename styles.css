@@ -118,3 +118,8 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.client-portrait {
+    max-width: 200px; /* Adjust the maximum width as needed */
+    max-height: 200px; /* Adjust the maximum height as needed */
+}
