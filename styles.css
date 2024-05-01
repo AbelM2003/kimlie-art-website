@@ -120,6 +120,6 @@ footer {
 }
 
 .client-portrait {
-    max-width: 400px; /* Adjust the maximum width as needed */
-    max-height: 400px; /* Adjust the maximum height as needed */
+    max-width: 800px; /* Adjust the maximum width as needed */
+    max-height: 800px; /* Adjust the maximum height as needed */
 }
