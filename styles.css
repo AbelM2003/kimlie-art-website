@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: 'Roboto Slab', serif; /* Use Roboto Slab as the primary font */
     margin: 0;
     padding: 0;
     display: flex;
@@ -98,15 +98,47 @@ footer {
     width: 100%;
 }
 
-.artwork-item {
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 20px; /* Adjust spacing between items as needed */
+/* Additional Styles */
+
+.box-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.subtitle {
-    font-family: 'Roboto Slab', serif;
-    font-size: 14px;
-    margin-top: 5px;
-    text-align: center;
+.button:hover {
+    background-color: #ff6347; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
+
+.gradient-background {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    /* Add vendor prefixes for wider browser support */
+}
+
+.rounded-corners {
+    border-radius: 8px; /* Rounded corners */
+}
+
+.transition {
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure header appears above other content */
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
 }
