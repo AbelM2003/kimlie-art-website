@@ -89,6 +89,7 @@ nav ul li a:hover {
     background-color: #f7e1e1; /* Very muted red background */
     padding: 80px 0; /* Increased padding */
     text-align: center;
+    margin-bottom: 20px; /* Adjust the margin as needed */
 }
 
 /* Gallery section styles */
