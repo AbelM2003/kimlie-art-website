@@ -89,7 +89,7 @@ nav ul li a:hover {
     background-color: #f7e1e1; /* Very muted red background */
     padding: 80px 0; /* Increased padding */
     text-align: center;
-    margin-bottom: 20px; /* Adjust the margin as needed */
+    margin-bottom: 40px; /* Adjust the margin as needed */
 }
 
 /* Gallery section styles */
@@ -121,7 +121,7 @@ footer {
 }
 
 .client-portrait {
-    max-width: 1200px; /* Adjust the maximum width as needed */
+    max-width: 900px; /* Adjust the maximum width as needed */
     height: auto; /* Allows the image to adjust its height proportionally */
     display: block; /* Ensures the image behaves as a block element */
     max-height: 900px; /* Adjust the maximum height as needed */
