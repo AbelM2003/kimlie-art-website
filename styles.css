@@ -1,88 +1,107 @@
-body {
-    font-family: 'Roboto Slab', serif; /* Use Roboto Slab as the primary font */
+/* Reset default styles */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Set up typography */
+body {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.6;
+    color: #333; /* Dark text color */
+    background-color: #f9f9f9; /* Light background color */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    position: relative; /* Positioning context for absolute footer */
 }
 
-.red-theme {
-    background-color: #f7e1e1; /* Muted red */
-}
-
-.wrapper {
-    flex: 1;
-}
-
+/* Container styles */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    flex: 1; /* Fill remaining space */
 }
 
+/* Header styles */
 header {
-    background-color: #b71c1c; /* Darker red */
-    color: #fff;
-    padding: 10px 0;
-}
-
-header .container {
-    display: flex;
-    justify-content: space-between; /* Align header content with menu */
-    align-items: center; /* Center align items vertically */
+    background-color: #b71c1c; /* Dark red header background */
+    color: #fff; /* Light text color */
+    padding: 20px 0;
+    text-align: center;
 }
 
 header h1 {
-    margin: 0;
+    font-weight: bold; /* Increase font weight */
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.6); /* Text shadow effect */
 }
 
-nav {
-    text-align: right; /* Align the menu to the right */
-}
-
+/* Navigation styles */
 nav ul {
     list-style-type: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-left: 20px; /* Add margin on the left to separate menu items */
+    display: inline-block;
+    margin: 20px 10px; /* Added margin */
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px; /* Increase padding to make menu items more prominent */
-    border-radius: 5px; /* Add some rounded corners for a nicer look */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Lighten the background on hover */
+    background-color: #8c0e0e; /* Darker red background on hover */
 }
 
+nav ul li a:hover {
+    background-color: #8c0e0e; /* Darker red background on hover */
+}
+
+/* Hero section styles */
 .hero {
-    background-color: #b71c1c; /* Darker red */
+    background-color: #b71c1c; /* Dark red */
     color: #fff;
     text-align: center;
-    padding: 80px 0;
+    padding: 100px 0; /* Increased padding */
 }
 
+.hero h1 {
+    font-size: 3em; /* Larger font size */
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em; /* Larger font size */
+    margin-bottom: 40px;
+}
+
+/* About and Contact sections */
 .about,
 .contact {
-    padding: 40px 0;
+    background-color: #f7e1e1; /* Very muted red background */
+    padding: 80px 0; /* Increased padding */
+    text-align: center;
 }
 
+/* Gallery section styles */
 .gallery {
-    padding: 40px 0;
+    background-color: #f9f9f9; /* Light background */
+    padding: 80px 0; /* Increased padding */
 }
 
 .artwork {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    grid-gap: 20px;
 }
 
 .artwork img {
@@ -90,56 +109,13 @@ nav ul li a:hover {
     height: auto;
 }
 
+/* Footer styles */
 footer {
-    background-color: #b71c1c; /* Darker red */
-    color: #fff;
+    background-color: #b71c1c; /* Dark red footer background */
+    color: #fff; /* Light text color */
     text-align: center;
-    padding: 10px 0;
-    width: 100%;
-}
-
-/* Additional Styles */
-
-.box-shadow {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.button:hover {
-    background-color: #ff6347; /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
-}
-
-.gradient-background {
-    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
-    /* Add vendor prefixes for wider browser support */
-}
-
-.rounded-corners {
-    border-radius: 8px; /* Rounded corners */
-}
-
-.transition {
-    transition: all 0.3s ease; /* Smooth transition for all properties */
-}
-
-.fixed-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensure header appears above other content */
-}
-
-.overlay {
-    position: relative;
-}
-
-.overlay::after {
-    content: "";
+    padding: 20px 0;
     position: absolute;
-    top: 0;
-    left: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
 }
-
